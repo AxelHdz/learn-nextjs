@@ -5,6 +5,11 @@ import CustomersTableSkeleton from '@/app/ui/skeletons';
 import { FormattedCustomersTable } from '@/app/lib/definitions';
 import Search from '@/app/ui/search';
 import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default async function Page(props: {
   searchParams?: Promise<{
